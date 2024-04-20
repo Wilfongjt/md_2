@@ -259,14 +259,15 @@ def main():
     d_GH_TRUNK='main'
 
     ##* Initialize environment
+
     env_file_content_string = initialize(recorder)
 
     ##* Load environment variables into memory
-    #print('1 load', DiagramString(recorder))
 
     env_file_content_string = load(recorder)
-    #print('2 load', DiagramString(recorder))
+
     ##* Confirm environment variables
+
     env_file_content_string = confirm(env_file_content_string, recorder)
 
     # initiate
